@@ -1,0 +1,73 @@
+body{background-color: rgb(34, 32, 34);}
+.exploreimg  :hover {
+    transform: rotate(3deg);
+transition: ease-out;
+ box-shadow: 0 2px 10px rgb(194, 173, 184);
+ transition: 0.4s;
+}
+
+.livecard:hover {
+ box-shadow: 0 2px 10px rgb(58, 207, 212);
+ transition: 0.4s;
+}
+
+.result-image:hover {
+ transform: translateY(-3px);
+ transition: 0.4s;
+ cursor: pointer;
+}
+.img::before {
+ content: "";
+ width: 0;
+ height: 100%;
+ background-color: rgba(231, 236, 230, 0.322);
+ position: absolute;
+ z-index: 10;
+ border-radius: 1.5rem;
+ top: 0;
+ left: 0;
+ transition: 0.5s;
+ z-index: 2;
+}
+.img:hover::before {
+ width: 100%;
+ z-index: 2;
+}
+
+.img:hover :last-child {
+ top: 80%;
+}
+
+.link {
+ background-color: white;
+ padding: 10px;
+ border-radius: 10px;
+ position: absolute;
+ z-index: 134;
+ left: 50%;
+ transform: translate(-50%, 0);
+ top: 100%;
+ transition: 0.3s;
+ opacity: 1;
+}
+
+.footer-e:hover {
+ font-weight: bold;
+}
+
+.loading {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; /* Need a specific value to work */
+}
+
+.noscroll { 
+
+-ms-overflow-style: none;
+scrollbar-width: none;
+
+}
