@@ -20,7 +20,7 @@ const LastHeader = () => {
        <div className="flex gap-3 rounded-xl bg-slate-50 items-center">
         <Avatar
          alt="user image"
-         src={user.picture}
+         src={user.picture || "img" }
          className="text-gray-400"
         ></Avatar>
         <LanguageRounded className="text-gray-400" />

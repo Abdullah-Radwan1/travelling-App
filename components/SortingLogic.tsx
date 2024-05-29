@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import ResultCard from "./ResultCard";
 import { Button } from "@mui/material";
 
-const SortingLogic = ({ SR } ) => {
+const SortingLogic = ({ SR } :any ) => {
  const [sortedResults, setSortedResults] = useState(SR);
  const [price, setprice] = useState(false);
  const [rooms, setrooms] = useState(false);
